@@ -1,17 +1,8 @@
 {
     "id": "test",
     "type": "index-pattern",
-    "namespaces": [
-        "terraform-test"
-    ],
-    "updated_at": "2021-01-07T21:54:49.926Z",
-    "version": "Wzg2LDFd",
     "attributes": {
         "title": "test*",
         "fields": "[{\"count\":0,\"name\":\"_id\",\"type\":\"string\",\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"count\":0,\"name\":\"_index\",\"type\":\"string\",\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"count\":0,\"name\":\"_score\",\"type\":\"number\",\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"count\":0,\"name\":\"_source\",\"type\":\"_source\",\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"count\":0,\"name\":\"_type\",\"type\":\"string\",\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false}]"
-    },
-    "references": [],
-    "migrationVersion": {
-        "index-pattern": "7.6.0"
     }
 }
