@@ -21,13 +21,13 @@ resource kibana_user_space "test" {
   disabled_features = []
 }
 
-resource kibana_object "test" {
-  name 				= "test"
-  data				= file("index-pattern.json")
+resource kibana_object "dashboard" {
+  name 				= "dashboard"
+  data				= file("kibana-dashboard.json")
   deep_reference	= "true"
   space = "terraform-test"
   export_objects {
-	  id = "my-pattern"
-	  type = "index-pattern"
+	  id = "dashboard"
+	  type = "dashboard"
   }
 }
