@@ -27,7 +27,7 @@ resource kibana_object "test" {
   deep_reference	= "true"
   space = "terraform-test"
   export_objects {
-	  id = "logstash-log-*"
+	  id = "test"
 	  type = "index-pattern"
   }
 }
