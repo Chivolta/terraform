@@ -21,7 +21,7 @@ resource kibana_user_space "test" {
   disabled_features = []
 }
 
-resource kibana_object ".ml-inference-000003" {
+resource kibana_object "ml-inference-000003" {
   name 				= ".ml-inference-000003"
   data				= file("index-pattern.json")
   deep_reference	= "true"
