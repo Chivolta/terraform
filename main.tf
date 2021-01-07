@@ -12,3 +12,11 @@ provider "kibana" {
     user = var.user
     password = var.password
 }
+
+resource kibana_user_space "test" {
+  name 				= "terraform-test"
+  description 		= "test"
+  initials			= "tt"
+  color				= "#000000"
+  disabled_features = []
+}
