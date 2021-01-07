@@ -22,11 +22,12 @@ resource kibana_user_space "test" {
 }
 
 resource kibana_object "ml-inference-000003" {
-  name 				= ".ml-inference-000003"
+  name 				= "test*"
   data				= file("index-pattern.json")
   deep_reference	= "true"
+  space = "terraform-test"
   export_objects {
-	  id = ".ml-inference-000003"
+	  id = "test*"
 	  type = "index-pattern"
   }
 }
