@@ -23,7 +23,7 @@ resource kibana_user_space "test" {
 
 resource kibana_object "test" {
   name 				= "test"
-  data				= "${file("index-pattern.json")}"
+  data				= file("index-pattern.json")
   deep_reference	= "true"
   export_objects {
 	  id = "test"
