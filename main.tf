@@ -22,12 +22,12 @@ resource kibana_user_space "test" {
 }
 
 resource kibana_object "dashboard" {
-  name 				= "dashboard"
+  name 				= "edf84fe0-e1a0-11e7-b6d5-4dc382ef7f5b"
   data				= file("kibana-dashboard.json")
-  deep_reference	= "true"
+  deep_reference	= "false"
   space = "terraform-test"
   export_objects {
-	  id = "dashboard"
+	  id = "edf84fe0-e1a0-11e7-b6d5-4dc382ef7f5b"
 	  type = "dashboard"
   }
 }
