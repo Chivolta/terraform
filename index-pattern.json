@@ -1,8 +1,5 @@
 {
-    "id": "my-pattern",
-    "type": "index-pattern",
-    "version": 1,
     "attributes": {
-        "title": "my-pattern-*"
+        "title": "test-pattern-*"
     }
 }
