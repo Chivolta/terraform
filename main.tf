@@ -27,7 +27,7 @@ resource kibana_object "test" {
   deep_reference	= "true"
   space = "terraform-test"
   export_objects {
-	  id = "test"
+	  id = "my-pattern"
 	  type = "index-pattern"
   }
 }
