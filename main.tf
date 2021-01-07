@@ -21,12 +21,12 @@ resource kibana_user_space "test" {
   disabled_features = []
 }
 
-resource kibana_object "test" {
-  name 				= "test"
+resource kibana_object ".ml-inference-000003" {
+  name 				= ".ml-inference-000003"
   data				= file("index-pattern.json")
   deep_reference	= "true"
   export_objects {
-	  id = "test"
+	  id = ".ml-inference-000003"
 	  type = "index-pattern"
   }
 }
