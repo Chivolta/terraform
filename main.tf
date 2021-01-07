@@ -22,7 +22,7 @@ resource kibana_user_space "test" {
 }
 
 resource kibana_object "test" {
-  name 				= "terraform-test"
+  name 				= "test"
   data				= "${file("index-pattern.json")}"
   deep_reference	= "true"
   export_objects {
